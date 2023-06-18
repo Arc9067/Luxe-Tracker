@@ -16,10 +16,10 @@ const App = () => {
           <img src={Work} alt="" loading="lazy" />
         </a>
         <a href="">
-          <img src={map} alt="" loading="lazy" />
+          <img src={features} alt="" loading="lazy" />
         </a>
         <a href="">
-          <img src={features} alt="" loading="lazy" />
+          <img src={map} alt="" loading="lazy" />
         </a>
         <a href="">
           <img src={release} alt="" loading="lazy" />
