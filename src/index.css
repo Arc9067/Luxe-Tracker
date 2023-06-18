@@ -6,4 +6,7 @@
   img {
     @apply md:w-[50rem] mx-auto;
   }
+  .customModal {
+    @apply h-[50vw] w-10/12 flex !justify-center !items-center !text-center text-[#F4BD15] !bg-black font-serif text-3xl;
+  }
 }

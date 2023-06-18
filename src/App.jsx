@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Hero from "./assets/hero.jpg";
 import Work from "./assets/work.jpg";
 import features from "./assets/features.jpg";
@@ -6,16 +6,22 @@ import map from "./assets/map.jpg";
 import release from "./assets/release.jpg";
 import Telegram from "./assets/telegram.webp";
 import Twitter from "./assets/twitter.png";
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
 
 const App = () => {
+  const [open, setOpen] = useState(false);
+
+  const onOpenModal = () => setOpen(true);
+  const onCloseModal = () => setOpen(false);
   return (
     <section className="min-h-screen text-white bg-black font-serif pt-[20px] pb-[50px]">
       <div className="container flex flex-col gap-14 justify-center items-center">
-        <div className="flex flex-col justify-center items-center text-center gap-6">
+        <div className="flex flex-col justify-center items-center text-center gap-6 relative">
           <a href="">
             <img src={Hero} alt="" loading="lazy" />
           </a>
-          <div className="flex justify-center items-center gap-6">
+          <div className="flex justify-center items-center gap-6 absolute top-0 md:top-2 right-0">
             <a href="" className="w-[2rem] hover:scale-125 transition">
               <img src={Telegram} alt="" />
             </a>
@@ -24,13 +30,26 @@ const App = () => {
             </a>
           </div>
 
-          <a
-            href=""
-            className="px-4  border-x  border-x-[#F4BD15] font-serif text-xl"
+          <button
+            className="px-4  border-x  border-x-[#F4BD15] font-serif text-xl text-[#F4BD15]"
+            onClick={onOpenModal}
           >
             initiate bot
-          </a>
+          </button>
         </div>
+
+        <Modal
+          open={open}
+          onClose={onCloseModal}
+          center
+          classNames={{
+            overlay: "customOverlay",
+            modal: "customModal",
+          
+          }}
+        >
+          <h2 className="text-center">coming soon!</h2>
+        </Modal>
         <a href="" className="mt-6">
           <img src={Work} alt="" loading="lazy" />
         </a>
