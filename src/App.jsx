@@ -25,7 +25,10 @@ const App = () => {
             <a href="" className="w-[2rem] hover:scale-125 transition">
               <img src={Telegram} alt="" />
             </a>
-            <a href="" className="w-[2rem] hover:scale-125 transition">
+            <a
+              href="https://twitter.com/LuxeTrackerERC" target="_blank"
+              className="w-[2rem] hover:scale-125 transition"
+            >
               <img src={Twitter} alt="" />
             </a>
           </div>
@@ -68,7 +71,10 @@ const App = () => {
               <a href="" className="w-[2rem] hover:scale-125 transition">
                 <img src={Telegram} alt="" />
               </a>
-              <a href="" className="w-[2rem] hover:scale-125 transition">
+              <a
+                href="https://twitter.com/LuxeTrackerERC" target="_blank"
+                className="w-[2rem] hover:scale-125 transition"
+              >
                 <img src={Twitter} alt="" />
               </a>
             </div>
