@@ -15,7 +15,7 @@ const App = () => {
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
   return (
-    <section className="min-h-screen text-white bg-black font-serif pt-[20px] pb-[50px]">
+    <section className="min-h-screen text-white bg-black font-serif pt-[20px] ">
       <div className="container flex flex-col gap-14 justify-center items-center">
         <div className="flex flex-col justify-center items-center text-center gap-6 relative">
           <a href="">
@@ -45,7 +45,6 @@ const App = () => {
           classNames={{
             overlay: "customOverlay",
             modal: "customModal",
-          
           }}
         >
           <h2 className="text-center">coming soon!</h2>
@@ -62,6 +61,20 @@ const App = () => {
         <a href="">
           <img src={map} alt="" loading="lazy" />
         </a>
+
+        <footer className="py-[20px] w-full">
+          <div className="container flex flex-col justify-center items-center gap-4">
+            <div className="flex justify-center items-center gap-6">
+              <a href="" className="w-[2rem] hover:scale-125 transition">
+                <img src={Telegram} alt="" />
+              </a>
+              <a href="" className="w-[2rem] hover:scale-125 transition">
+                <img src={Twitter} alt="" />
+              </a>
+            </div>
+            <p className="text-xl">CopyRight &copy; {new Date().getFullYear()} LuxeTracker</p>
+          </div>
+        </footer>
       </div>
     </section>
   );
