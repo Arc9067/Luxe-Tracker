@@ -8,7 +8,7 @@ import release from "./assets/release.jpg";
 const App = () => {
   return (
     <section className="min-h-screen bg-black font-serif py-[50px]">
-      <div className="container flex flex-col gap-10">
+      <div className="container flex flex-col gap-10 justify-center items-center">
         <a href="">
           <img src={Hero} alt="" loading="lazy" />
         </a>
