@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  img {
+    @apply md:w-[30rem] mx-auto;
+  }
+}
