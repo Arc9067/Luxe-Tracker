@@ -12,7 +12,7 @@ const App = () => {
         <a href="">
           <img src={Hero} alt="" loading="lazy" />
         </a>
-        <a href="">
+        <a href="" className="mt-6">
           <img src={Work} alt="" loading="lazy" />
         </a>
         <a href="">
