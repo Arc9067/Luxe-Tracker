@@ -19,10 +19,10 @@ const App = () => {
           <img src={features} alt="" loading="lazy" />
         </a>
         <a href="">
-          <img src={map} alt="" loading="lazy" />
+          <img src={release} alt="" loading="lazy" />
         </a>
         <a href="">
-          <img src={release} alt="" loading="lazy" />
+          <img src={map} alt="" loading="lazy" />
         </a>
       </div>
     </section>
