@@ -4,6 +4,6 @@
 
 @layer {
   img {
-    @apply md:w-[30rem] mx-auto;
+    @apply md:w-[50rem] mx-auto;
   }
 }
