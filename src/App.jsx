@@ -4,14 +4,33 @@ import Work from "./assets/work.jpg";
 import features from "./assets/features.jpg";
 import map from "./assets/map.jpg";
 import release from "./assets/release.jpg";
+import Telegram from "./assets/telegram.webp";
+import Twitter from "./assets/twitter.png";
 
 const App = () => {
   return (
-    <section className="min-h-screen bg-black font-serif pt-[20px] pb-[50px]">
+    <section className="min-h-screen text-white bg-black font-serif pt-[20px] pb-[50px]">
       <div className="container flex flex-col gap-14 justify-center items-center">
-        <a href="">
-          <img src={Hero} alt="" loading="lazy" />
-        </a>
+        <div className="flex flex-col justify-center items-center text-center gap-6">
+          <a href="">
+            <img src={Hero} alt="" loading="lazy" />
+          </a>
+          <div className="flex justify-center items-center gap-6">
+            <a href="" className="w-[2rem] hover:scale-125 transition">
+              <img src={Telegram} alt="" />
+            </a>
+            <a href="" className="w-[2rem] hover:scale-125 transition">
+              <img src={Twitter} alt="" />
+            </a>
+          </div>
+
+          <a
+            href=""
+            className="px-4  border-x  border-x-[#F4BD15] font-serif text-xl"
+          >
+            initiate bot
+          </a>
+        </div>
         <a href="" className="mt-6">
           <img src={Work} alt="" loading="lazy" />
         </a>
