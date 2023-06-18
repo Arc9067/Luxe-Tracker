@@ -22,11 +22,16 @@ const App = () => {
             <img src={Hero} alt="" loading="lazy" />
           </a>
           <div className="flex justify-center items-center gap-6 absolute top-0 md:top-2 right-0">
-            <a href="" className="w-[2rem] hover:scale-125 transition">
+            <a
+              href="https://t.me/LuxeTrackerERC"
+              target="_blank"
+              className="w-[2rem] hover:scale-125 transition"
+            >
               <img src={Telegram} alt="" />
             </a>
             <a
-              href="https://twitter.com/LuxeTrackerERC" target="_blank"
+              href="https://twitter.com/LuxeTrackerERC"
+              target="_blank"
               className="w-[2rem] hover:scale-125 transition"
             >
               <img src={Twitter} alt="" />
@@ -68,11 +73,16 @@ const App = () => {
         <footer className="py-[20px] w-full">
           <div className="container flex flex-col justify-center items-center gap-4">
             <div className="flex justify-center items-center gap-6">
-              <a href="" className="w-[2rem] hover:scale-125 transition">
+              <a
+                href="https://t.me/LuxeTrackerERC"
+                target="_blank"
+                className="w-[2rem] hover:scale-125 transition"
+              >
                 <img src={Telegram} alt="" />
               </a>
               <a
-                href="https://twitter.com/LuxeTrackerERC" target="_blank"
+                href="https://twitter.com/LuxeTrackerERC"
+                target="_blank"
                 className="w-[2rem] hover:scale-125 transition"
               >
                 <img src={Twitter} alt="" />
