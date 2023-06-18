@@ -72,7 +72,9 @@ const App = () => {
                 <img src={Twitter} alt="" />
               </a>
             </div>
-            <p className="text-xl">CopyRight &copy; {new Date().getFullYear()} LuxeTracker</p>
+            <p className="text-xl">
+              Copyright &copy; {new Date().getFullYear()} LuxeTracker
+            </p>
           </div>
         </footer>
       </div>
